@@ -1,0 +1,14 @@
+My UDP client works by grabbing input from user then sending input to server.
+I used the skeleton code from discussion section to initialize connection between
+client and server. I added a while loop so my program can receive multiple messages
+from server. 
+My UDP server works the same way as my client does, but has some differences.
+The server never closes the socket and hence is always receiving messages unless
+the user uses CTRL+C. The server also has a while loop to keep retrieving messages
+but also contains a simple for loop for calculating the sum of the messages retrieved.
+
+My TCP server/client work in a similar way that the UDP server/client do, but instead
+use different functions to send/retrieve/listen/etc. The TCP program is slightly different
+in that it uses a total of 3 sockets to send information. The TCP program listens to establish
+a 3 way connection and closes once the final answer is sent to the client. A lot of the functionality
+is taken from the UDP program. Also used the skeleton code provided in discussion section to start off.
